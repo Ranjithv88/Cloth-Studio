@@ -22,12 +22,23 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <div><a href="#"></a></div>
         <div><a href="#"></a></div>
         <div><a href="#"></a></div>
         <div><a href="#"></a></div>
         <div><a href="#"></a></div>
+    </main>
+    <div class="empty">
+        <h1>Celebrate your flair<br/>Expression on your own terms</h1>
+    </div>
+    <main class="main01">
+        <div class="women">
+            <button type="button">Shop Now</button>
+        </div>
+        <div class="kids">
+            <button type="button">Shop Now</button>
+        </div>
     </main>
     <footer>
         <div class="Foot01">
@@ -71,6 +82,17 @@
             <p>© 2025 All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+       window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY
+            const header = document.getElementsByTagName('header')[0]
+            if(scrollPosition<28){
+                header.style.backgroundColor = 'transparent'
+            }else {
+                header.style.backgroundColor = 'rgba(1, 1, 1, 1)'
+            }
+        })
+    </script>
 </body>
 </html>
 
